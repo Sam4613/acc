@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.properties {
+	flex-basis: 70%;
+}
+
+.properties ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.properties li {
+	flex-basis: calc(50% - 10px);
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.properties h3 {
+	margin-top: 0;
+}
+
+.properties img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.financials {
+	flex-basis: 28%;
+}
+
+.financials table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.financials th, .financials td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+.financials th {
+	background-color: #f2f2f2;
+}
+
+.financials tfoot td {
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+.financials tfoot td[colspan="2"] {
+	text-align: right;
+}
+
+.financials tfoot td:last-child {
+	text-align: center;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+	}
+
+	.properties li {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+}
