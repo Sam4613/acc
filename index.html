@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Real Estate Agent Software</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Real Estate Agent Software</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Properties</a></li>
+				<li><a href="#">Financials</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="properties">
+			<h2>Available Properties</h2>
+			<ul>
+				<li>
+					<h3>Property 1</h3>
+					<img src="http://dalejoy.com/wp-content/uploads/2022/08/adding-business-value-with-corporate-real-estate-768x401.png" alt="Property 1">
+					<p>Description of Property 1</p>
+				</li>
+				<li>
+					<h3>Property 2</h3>
+					<img src="https://via.placeholder.com/300x150.png?text=Property+2" alt="Property 2">
+					<p>Description of Property 2</p>
+				</li>
+				<li>
+					<h3>Property 3</h3>
+					<img src="https://via.placeholder.com/300x150.png?text=Property+3" alt="Property 3">
+					<p>Description of Property 3</p>
+				</li>
+				<li>
+					<h3>Property 4</h3>
+					<img src="https://via.placeholder.com/300x150.png?text=Property+4" alt="Property 4">
+					<p>Description of Property 4</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="financials">
+			<h2>Tenant Financials</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Monthly Rent</th>
+						<th>Next Rent Due</th>
+						<th>Budget</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="user-profile">
+								<img src="https://via.placeholder.com/50x50.png?text=User+1">
+								<p>User 1</p>
+								<div class="due">Payment Due</div>
+							</div>
+						</td>
+						<td>$1000</td>
+						<td>April 1, 2023</td>
+						<td>$800</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="user-profile">
+								<img src="https://via.placeholder.com/50x50.png?text=User+2">
+								<p>User 2</p>
+							</div>
+						</td>
+						<td>$1200</td>
+						<td>April 5, 2023</td>
+						<td>$1000</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="user-profile">
+								<img src="https://via.placeholder.com/50x50.png?text=User+3">
+								<p>User 3</p>
+								<div class="due">Payment Over</div>
+							</div>
+							<div class="user-profile">
+								<img src="https://via.placeholder.com/50x50.png?text=User+4">
+								<p>User 4</p>
+								<div class="rent-date">Next Rent Date: 10th April 2023</div>
+							</div>
+							<div class="user-profile">
+								<img src="https://via.placeholder.com/50x50.png?text=User+5">
+								<p>User 5</p>
+								<div class="rent-date">Next Rent Date: 15th April 2023</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="financial">
+					<h2>Dummy Budgets</h2>
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Amount</th>
+							<th>Date</th>
+						</tr>
+						<tr>
+							<td>Rajesh</td>
+							<td>5000</td>
+							<td>5th April 2023</td>
+						</tr>
+						<tr>
+							<td>Ahmed</td>
+							<td>8000</td>
+							<td>8th April 2023</td>
+						</tr>
+						<tr>
+							<td>Anjali</td>
+							<td>3000</td>
+							<td>12th April 2023</td>
+						</tr>
+						<tr>
+							<td>Abdul</td>
+							<td>4000</td>
+							<td>20th April 2023</td>
+						</tr>
+						<tr>
+							<td>Meena</td>
+							<td>7000</td>
+							<td>25th April 2023</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
+<!-- CSS -->
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #333;
+		color: #fff;
+		padding: 20px;
+	}
+	.logo img {
+		height: 50px;
+	}
+	.navigation a {
+		color: #fff;
+		text-decoration: none;
+		padding: 10px;
+		margin: 0 10px;
+		border-radius: 5px;
+	}
+	.navigation a:hover {
+		background-color: #fff;
+		color: #333;
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 20px;
+	}
+	.property {
+		flex: 2;
+		margin-right: 20px;
+	}
+	.property h2 {
+		margin-top: 0;
+	}
+	.property img {
+		width: 100%;
+		height: auto;
+	}
+	.user-profiles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+	.user-profile {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.user-profile img {
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+	.user-profile p {
+		margin: 0;
+		font-size: 1rem;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.due {
+	color: red;
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.next-rent-date {
+	color: #555;
+	font-size: 0.8rem;
+	margin-left: 10px;
+}
+
+/* Dummy Budgets */
+.budgets {
+	margin-top: 40px;
+}
+
+.budget {
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.budget p {
+	margin: 0;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.budget .value {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 5px;
+}
+</style>
+<body>
+	<!-- Header -->
+	<header>
+		<h1>Real Estate Agent App</h1>
+	</header>
+    <!-- Available Properties -->
+<section id="available-properties">
+	<h2>Available Properties</h2>
+	<div class="properties">
+		<div class="property">
+			<img src="http://dalejoy.com/wp-content/uploads/2022/08/adding-business-value-with-corporate-real-estate-768x401.png" alt="Property 1">
+			<div class="property-info">
+				<h3>Property 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<button>View Details</button>
+			</div>
+		</div>
+		<div class="property">
+			<img src="https://via.placeholder.com/500x300.png?text=Property+2" alt="Property 2">
+			<div class="property-info">
+				<h3>Property 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<button>View Details</button>
+			</div>
+		</div>
+		<div class="property">
+			<img src="https://via.placeholder.com/500x300.png?text=Property+3" alt="Property 3">
+			<div class="property-info">
+				<h3>Property 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<button>View Details</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- User Profiles -->
+<section id="user-profiles">
+	<h2>User Profiles</h2>
+	<div class="users">
+		<div class="user-profile">
+			<img src="https://via.placeholder.com/50x50.png?text=User+1">
+			<p>User 1</p>
+			<div class="next-rent-date">Next Rent Date: 01/04/2023</div>
+		</div>
+		<div class="user-profile">
+			<img src="https://via.placeholder.com/50x50.png?text=User+2">
+			<p>User 2</p>
+			<div class="next-rent-date">Next Rent Date: 05/04/2023</div>
+		</div>
+		<div class="user-profile">
+			<img src="https://via.placeholder.com/50x50.png?text=User+3">
+            <p>User 3</p>
+            <div class="due overdue">
+            <p>Payment Overdue</p>
+            </div>
+            </div>
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/50x50.png?text=User+4">
+                <p>User 4</p>
+                <div class="due">
+                    <p>Next Rent Date: 05/01/2023</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="budget">
+            <h2>Dummy Budgets</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Rahul</td>
+                    <td>₹20,000</td>
+                </tr>
+                <tr>
+                    <td>Amit</td>
+                    <td>₹25,000</td>
+                </tr>
+                <tr>
+                    <td>Priya</td>
+                    <td>₹15,000</td>
+                </tr>
+                <tr>
+                    <td>Imran</td>
+                    <td>₹30,000</td>
+                </tr>
+                <tr>
+                    <td>Kavya</td>
+                    <td>₹22,000</td>
+                </tr>
+                <tr>
+                    <td>Sidharth</td>
+                    <td>₹18,000</td>
+                </tr>
+                <tr>
+                    <td>Anjali</td>
+                    <td>₹27,000</td>
+                </tr>
+                <tr>
+                    <td>Harpreet</td>
+                    <td>₹23,000</td>
+                </tr>
+                <tr>
+                    <td>Manoj</td>
+                    <td>₹21,000</td>
+                </tr>
+                <tr>
+                    <td>Nidhi</td>
+                    <td>₹17,000</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    </html>
+</table>
+</div>
+<div class="financial">
+	<h2>Financial Report</h2>
+	<ul>
+		<li>Profit: ₹50,000</li>
+		<li>Loss: ₹20,000</li>
+		<li>Opening Balance: ₹1,00,000</li>
+		<li>Closing Balance: ₹1,30,000</li>
+	</ul>
+</div>
+</body>
+</html>        
